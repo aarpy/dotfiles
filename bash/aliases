@@ -67,3 +67,4 @@ alias less='$(which less) -XRN'
 alias reload='. ~/.bash_profile'
 alias make_gems_writable="sudo chmod -R a+w /Library/Ruby/Gems/1.8/gems"
 alias catchup='git pull && sudo geminstaller && migrate'
+alias mysql='mysql -uroot -ppassword'
