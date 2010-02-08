@@ -1,0 +1,69 @@
+# cd
+alias ..='cd ..'
+
+# ls
+alias ls="ls -F"
+alias l="ls -lAh"
+alias ll="ls -l"
+alias la='ls -A'
+
+# git
+alias git='$(which git) config user.name; $(which git)'
+alias gl='git pull'
+alias gp='git push'
+alias gpp="git pull && git push"
+alias gd='git diff'
+alias gc='git commit'
+alias gca='git commit -a'
+alias gco='git checkout'
+alias gb='git branch'
+alias gsh="git sh"
+alias gst="git status"
+alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
+alias gsh="git sh"
+alias ga="git add"
+
+# rails
+alias sc='script/console'
+alias ss='script/server'
+alias sg='script/generate'
+alias a='autotest -rails'
+alias tlog='tail -f log/development.log'
+alias scaffold='script/generate nifty_scaffold'
+alias rst='touch tmp/restart.txt'
+
+#rails migrations
+alias migrate='rake db:migrate db:test:prepare'
+alias rdm="rake db:migrate"
+alias rdtp="rake db:test:prepare"
+#alias rdb ='rake db:reset spec:db:fixtures:load'
+
+# commands starting with % for pasting from web
+alias %=' '
+
+# changing directory to code project
+function c { cd ~/code/$1; }
+
+# alternative to "rails" command to use templates
+function railsapp {
+  template=$1
+  appname=$2
+  shift 2
+  rails $appname -m http://github.com/ryanb/rails-templates/raw/master/$template.rb $@
+}
+
+# testing
+alias suitef="ruby spec/spec_suite.rb"
+alias suitefc="suitef --commit"
+alias suite="suitef"
+alias suitec="suite --commit"
+alias suitejc="suite --fast_js --commit"
+alias suites="suite --slow"
+alias suitesc="suites --commit"
+alias suitefails="echo 'Running suite, please wait...' && suitef | egrep '(_spec\.rb|Pending:)' | sed -e 's/.*spec\/\(.*\.rb\).*/\1/' | egrep -v '(fast_spec_suite|rails_spec_suite|suite)\.rb'"
+
+# misc
+alias less='$(which less) -XRN'
+alias reload='. ~/.bash_profile'
+alias make_gems_writable="sudo chmod -R a+w /Library/Ruby/Gems/1.8/gems"
+alias catchup='git pull && sudo geminstaller && migrate'

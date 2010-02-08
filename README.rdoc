@@ -1,0 +1,15 @@
+= Egghead Creative Dot Files
+
+Dot files
+
+
+== Installation
+
+  git clone git://github.com/ehc/dotfiles ~/.dotfiles
+  cd ~/.dotfiles
+  rake install
+
+== Features
+
+== Credits
+  Ryan Bates for his dotfiles
