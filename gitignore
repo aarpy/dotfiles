@@ -1,13 +1,15 @@
 .DS_Store
 .svn
 .idea/**/*
-.DS_Store
 log/*.log
 tmp/**/*
 db/*.sqlite3
+db/sphinx/*
+config/development.sphinx.conf
 public/system/**/*
+public/assets/**/*
 coverage
 .idea/*
 junk.*
-public/stylesheets/**/*
 *~
+vendor/plugins/jelly
