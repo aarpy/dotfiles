@@ -41,6 +41,8 @@ alias rdtp="rake db:test:prepare"
 
 #capistrano
 alias cdd='cap demo deploy'
+alias cpd='cap production deploy'
+alias csd='cap staging deploy'
 
 # commands starting with % for pasting from web
 alias %=' '
