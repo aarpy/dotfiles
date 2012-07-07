@@ -1,5 +1,6 @@
 # cd
 alias ..='cd ..'
+alias gs="git summary"
 
 # ls
 alias ls="ls -F"
@@ -11,7 +12,6 @@ alias la='ls -A'
 alias git='$(which git) config user.name; $(which git)'
 alias gl='git pull'
 alias gp='git push'
-alias gpp="git pull && git push"
 alias gd='git diff'
 alias gc='git commit'
 alias gca='git commit -a'
@@ -22,6 +22,9 @@ alias gst="git status"
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias gsh="git sh"
 alias ga="git add"
+alias glg="git log --pretty=oneline --graph --all"
+alias gps='git push staging master'
+alias gpp='git push production master'
 
 # rails
 alias sc='script/console'
@@ -74,6 +77,7 @@ alias reload='. ~/.bash_profile'
 alias make_gems_writable="sudo chmod -R a+w /Library/Ruby/Gems/1.8/gems"
 alias catchup='git pull && sudo geminstaller && migrate'
 alias mysql='mysql -uroot -ppassword'
+alias fs='foreman start'
 
 #Rails 3
 alias rc='rails console'

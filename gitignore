@@ -12,4 +12,4 @@ coverage
 .idea/*
 junk.*
 *~
-vendor/plugins/jelly
+.monitor
