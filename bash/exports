@@ -1,0 +1,5 @@
+export NODE_ENV=development
+export CUSTOMER_SUPPORT_NUMBER=+13104881370
+export CHAT_SERVER_URL=http://localhost:5000/
+export CRUNCHBASE_API_KEY=ftzfr29mswj3k73rygjwpdbs
+RACK_ENV=development

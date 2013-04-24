@@ -50,3 +50,4 @@ export EDITOR="vi"
 export TERM=xterm-color
 
 #keychain --quiet --quick --timeout 15 && . ~/.keychain/*-sh
+export NODE_ENV=development
