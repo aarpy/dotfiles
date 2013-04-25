@@ -1,46 +1,20 @@
-REV=`uname -r |awk -F. '{print $1}'`
+#!/bin/bash
 
-if [ 8 == ${REV} ]; then
-   OSX="TIGER"
-elif [ 9 == ${REV} ]; then
-  OSX="LEOPARD"
-fi
+HISTCONTROL=ignoreboth
+HISTSIZE=1000
+HISTFILESIZE=2000
 
-if [ X${OSX} == X"LEOPARD" ]; then
-  alias gems='mate /opt/local/lib/ruby/gems/1.8/gems'
-  export GEM_HOME=/opt/local/lib/ruby/gems/1.8/
-  export GEM_PATH=/opt/local/lib/ruby/gems/1.8/
-  export JAVA_HOME=/usr
-fi
+shopt -s histappend
+shopt -s checkwinsize
 
+[ -e "$WORKSPACE" ] || WORKSPACE="$HOME/Workspace"
+export WORKSPACE
 
 ## window title
 title() {
   t="${USER}@${HOSTNAME}: $*"
   echo -n "";
 }
-
-parse_git_branch() {
- $(which git) branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(git::\1)/'
-}
-
-parse_svn_branch() {
- parse_svn_url | sed -e 's#^'"$(parse_svn_repository_root)"'##g' | awk -F / '{print "(svn::"$1 "/" $2 ")"}'
-}
-
-parse_svn_url() {
- svn info 2>/dev/null | grep -e '^URL*' | sed -e 's#^URL: *\(.*\)#\1#g '
-}
-
-parse_svn_repository_root() {
- svn info 2>/dev/null | grep -e '^Repository Root:*' | sed -e 's#^Repository Root: *\(.*\)#\1\/#g '
-}
-
-#export PS1="\[\033[00m\]\u@\h\[\033[01;36m\] \w \[\033[01;33m\]\$(parse_git_branch)\$(parse_svn_branch) \[\033[00m\]$\[\033[00m\]"
-#PS1='\[\e[5m\]\t\[\e[m\] \[\e[0;31m\]\w\[\e[m\] \[\e[0;31m\]\$ \[\e[m\]'
-#PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[0;31m\]\w\[\e[m\] \[\e[0;31m\]\$ \[\e[m\]'
-#PS1='\[\033[1;33m\]\u\[\033[1;37m\]@\[\033[1;32m\]\h\[\033[1;37m\]:\[\033[1;31m\]\w \[\033[1;36m\]\$ \[\033[0m\]'
-#PS1='\[\033[1;33m\]\u\[\033[1;33m\]@\[\033[1;33m\]\h\[\033[0m\]:\[\033[1;30m\]\w \[\033[0m\]\$ '
 
 export PS1="\[\033[36m\]\h:\w \[\033[33m\]\$(parse_git_branch)\$(parse_svn_branch)\[\033[00m\]$\[\033[00m\] "
 export CLICOLOR=1
@@ -51,3 +25,4 @@ export TERM=xterm-color
 
 #keychain --quiet --quick --timeout 15 && . ~/.keychain/*-sh
 export NODE_ENV=development
+export RACK_ENV=development

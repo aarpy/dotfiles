@@ -1,14 +1,14 @@
 # cd
 alias ..='cd ..'
-alias gs="git summary"
 
 # ls
 alias ls="ls -F"
-alias l="ls -lAh"
-alias ll="ls -l"
 alias la='ls -A'
+alias ll='ls -alF'
+alias l='ls -CF'
 
 # git
+alias gs="git summary"
 alias gd="git diff"
 alias ga="git add"
 alias gbd="git branch -D"
@@ -23,9 +23,27 @@ alias gcob="git checkout -b"
 alias gco="git checkout"
 alias gba="git branch -a"
 alias gcp="git cherry-pick"
-alias gl="git log --pretty='format:%Cgreen%h%Creset %an - %s' --graph"
+alias glg="git log --pretty='format:%Cgreen%h%Creset %an - %s' --graph"
 alias gpom="git pull origin master"
 alias gcd='cd "`git rev-parse --show-toplevel`"'
+alias gap='git add -p'
+alias gnap='git add -N . && git add -p'
+alias gb='git branch'
+alias gc='git commit -v'
+alias gca='git commit -a -v'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gdh='git diff HEAD'
+alias gl='git pull'
+alias glod='git log --oneline --decorate'
+alias gln="git ln | perl -ple 's/\*/sprintf(\"%2s\", \$n++)/e' | less"
+alias gp='git push'
+alias gpr='git pull --rebase'
+alias gst='git status'
+alias gr='git rebase'
+alias grc='git rebase --continue'
+alias gra='git rebase --abort'
+alias reset-authors='git commit --amend --reset-author -C HEAD'
 
 alias git='$(which git) config user.name; $(which git)'
 alias gsh="git sh"
@@ -57,17 +75,6 @@ alias csd='cap staging deploy'
 # commands starting with % for pasting from web
 alias %=' '
 
-# changing directory to code project
-function c { cd ~/code/$1; }
-
-# alternative to "rails" command to use templates
-function railsapp {
-  template=$1
-  appname=$2
-  shift 2
-  rails $appname -m http://github.com/ehc/rails-templates/raw/master/$template.rb $@
-}
-
 # testing
 alias suitef="ruby spec/spec_suite.rb"
 alias suitefc="suitef --commit"
@@ -87,6 +94,7 @@ alias mysql='mysql -uroot -ppassword'
 alias fs='foreman start'
 alias pkme='pagekite.py 5000 ehc.pagekite.me'
 alias tunnel='ssh -vND 8888 new_pip2p_prod'
+alias unhitch='hitch -u'
 
 #Rails 3
 alias rc='rails console'

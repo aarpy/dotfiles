@@ -1,0 +1,21 @@
+#!/bin/bash
+
+pskill()
+{
+  local pid
+  pid=$(ps -ax | grep $1 | grep -v grep | awk '{ print $1 }')
+  echo -n "killing $1 (process $pid)..."
+  kill -9 $pid
+  echo "slaughtered."
+}
+
+# changing directory to workspace
+function c { cd ~/Workspace/$1; }
+
+# alternative to "rails" command to use templates
+function railsapp {
+  template=$1
+  appname=$2
+  shift 2
+  rails $appname -m http://github.com/ehc/rails-templates/raw/master/$template.rb $@
+}
