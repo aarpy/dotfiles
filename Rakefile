@@ -6,7 +6,7 @@ task :install do
   replace_all = false
   Dir['*'].each do |file|
     next if %w[Rakefile README.rdoc LICENSE].include? file
-    
+
     if File.exist?(File.join(ENV['HOME'], ".#{file.sub('.erb', '')}"))
       if replace_all
         replace_file(file)
@@ -43,6 +43,6 @@ def link_file(file)
     end
   else
     puts "linking ~/.#{file}"
-    system %Q{ln -s "$PWD/#{file}" "$HOME/.#{file}"}
+    system %Q{ln -s -f "$PWD/#{file}" "$HOME/.#{file}"}
   end
 end
