@@ -26,3 +26,5 @@ export TERM=xterm-color
 #keychain --quiet --quick --timeout 15 && . ~/.keychain/*-sh
 export NODE_ENV=development
 export RACK_ENV=development
+
+cd ~/Workspace
