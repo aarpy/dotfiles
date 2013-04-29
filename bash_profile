@@ -1,6 +1,6 @@
 source ~/.bash/helpers/heroku
-source ~/.bash/helpers/hitch
 source ~/.bash/helpers/git
+source ~/.bash/helpers/pick
 source ~/.bash/helpers/misc
 source ~/.bash/config
 source ~/.bash/aliases

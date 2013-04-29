@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+pick() {
+  #helper methods like list add
+  #switch method
+  # remove all ssh-add keys
+  # add selected users key
+  # Update git global config info
+  echo "Pick The Right User"
+  command pick "$@"
+  if [[ -s "$HOME/.team" ]] ; then source "$HOME/.team" ; fi
+
+  ssh-add -D
+  ssh-add -l
+}
