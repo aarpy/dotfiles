@@ -5,8 +5,6 @@ source ~/.bash/helpers/misc
 source ~/.bash/config
 source ~/.bash/aliases
 source ~/.bash/completions
-source ~/.bash/paths
-source ~/.bash/exports
 
 if [ -f ~/.bashrc ]; then
   . ~/.bashrc
