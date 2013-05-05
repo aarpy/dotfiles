@@ -39,6 +39,8 @@ export EDITOR="vi"
 export TERM=xterm-color
 export PATH=$PATH:~/opt/local/android-sdk/tools:~/opt/local/android-sdks/platform-tools
 
+export JAVA_HOME=/usr/lib/jvm/java-7-oracle
+
 export NODE_ENV=development
 export RACK_ENV=development
 
