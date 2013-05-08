@@ -103,3 +103,6 @@ alias rs='rails server'
 #ubuntu specific
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
+
+#ssh-agent helpers
+alias sarst='killall ssh-agent; eval `ssh-agent`'
