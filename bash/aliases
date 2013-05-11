@@ -2,10 +2,10 @@
 alias ..='cd ..'
 
 # ls
-alias ls="ls -F"
-alias la='ls -A'
-alias ll='ls -alF'
-alias l='ls -CF'
+alias ls="ls -F --color"
+alias la='ls -A --color'
+alias ll='ls -alF --color'
+alias l='ls -CF --color'
 
 # git
 alias gs="git summary"
