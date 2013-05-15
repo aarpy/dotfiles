@@ -1,7 +1,6 @@
-= Egghead Creative Dot Files
+= The Egghead Creative Dot Files
 
 Dot files
-
 
 == Installation
 
