@@ -7,4 +7,6 @@ awesome_print
 looksee
 hirb
 pry
-hitch
+rails
+foreman
+unicorn
