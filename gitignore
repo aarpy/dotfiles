@@ -1,6 +1,7 @@
 .DS_Store
 .svn
-.idea/**/*
+.idea/workspace.xml
+.idea/tasks.xml
 log/*.log
 tmp/**/*
 db/*.sqlite3
@@ -9,7 +10,6 @@ config/development.sphinx.conf
 public/system/**/*
 public/assets/**/*
 coverage
-.idea/*
 junk.*
 *~
 .monitor
