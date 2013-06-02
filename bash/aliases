@@ -98,7 +98,6 @@ alias mysql='mysql -uroot -ppassword'
 alias fs='foreman start'
 alias pkme='pagekite.py 5000 ehc.pagekite.me'
 alias tunnel='ssh -vND 8888 new_pip2p_prod'
-alias unhitch='hitch -u'
 
 #Rails 3
 alias rc='rails console'
