@@ -44,5 +44,5 @@ export ANDROID_HOME=~/opt/local/android-sdk
 export NODE_ENV=development
 export RACK_ENV=development
 
-export PATH=$PATH:~/opt/local/android-sdk/tools:~/opt/local/android-sdk/platform-tools
+export PATH=$PATH:~/opt/local/android-sdk/tools:~/opt/local/android-sdk/platform-tools:~/opt/local/apache-maven-3.0.5/bin
 cd ~/Workspace
