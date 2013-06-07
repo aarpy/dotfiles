@@ -141,11 +141,11 @@ sudo apt-get install --yes --force-yes nodejs npm
 mkdir -p ~/.vim/autoload ~/.vim/bundle
 curl -Sso ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 
-# Make reference directory 
-mkdir -p ~/Workspace/reference
-
 # Android Initialization
 which android &> /dev/null
+
+# Make reference directory 
+mkdir -p ~/Workspace/reference
 
 if [ $? -eq 1 ]; then
   mkdir -p ~/opt/local
@@ -158,6 +158,3 @@ if [ $? -eq 1 ]; then
 else
   android update sdk --no-ui --filter 1,10,23,38,39
 fi
-
-# Update local maven repo
-
