@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ `whoami` != "ehc" ]; then
+if [ `whoami` != "rambo" ]; then
 echo "You need to be an egghead creative employee to run this!"
   exit 2
 fi
@@ -54,6 +54,7 @@ if [ $? -eq 1 ]; then
   # rvm install ree-1.8.7
   # rvm install 1.9.2
   rvm install 1.9.3
+  rvm all do rvm docs generate
   # rvm install 2.0.0
 fi
 
