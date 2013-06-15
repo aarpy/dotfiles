@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ `whoami` != "rambo" ]; then
+if [ `whoami` != "ehc" ]; then
 echo "You need to be an egghead creative employee to run this!"
   exit 2
 fi
