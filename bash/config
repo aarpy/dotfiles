@@ -45,5 +45,5 @@ export M2_HOME=~/opt/local/apache-maven-3.0.5
 export NODE_ENV=development
 export RACK_ENV=development
 
-export PATH=$PATH:~/opt/local/android-sdk/tools:~/opt/local/android-sdk/platform-tools:~/opt/local/apache-maven-3.0.5/bin
+export PATH=$PATH:~/opt/local/android-sdk/tools:~/opt/local/android-sdk/platform-tools:~/opt/local/apache-maven-3.0.5/bin:~/Workspace/dotfiles/support
 cd ~/Workspace
