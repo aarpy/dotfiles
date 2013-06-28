@@ -122,7 +122,7 @@ sudo apt-get install --yes --force-yes chromium-browser flashplugin-installer
 sudo cp /usr/lib/flashplugin-installer/libflashplayer.so /usr/lib/chromium-browser/plugins
 
 # Misc
-sudo apt-get install pidgin xclip compizconfig-settings-manager
+sudo apt-get install --yes --force-yes pidgin xclip compizconfig-settings-manager imagemagick libmagickcore-dev
 
 ################################################################
 # Databases ####################################################
