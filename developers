@@ -1,40 +1,40 @@
---- 
-srini: 
+---
+srini:
   Full Name: Srinivas Aki
   Email: srini@eggheadcreative.com
   Github Id: saki
   SSH Identity: ehc.srini
-tripura: 
+tripura:
   Full Name: Tripura Konda
   Email: tripura@eggheadcreative.com
   Github Id: tripura
   SSH Identity: ehc.tripura
-praaveen: 
+praaveen:
   Full Name: Praaveen Ranganathan
   Email: praaveen@eggheadcreative.com
   Github Id: pvin
   SSH Identity: ehc.praaveen
-prem: 
+prem:
   Full Name: Prembabu Panchadara
   Email: prem@eggheadcreative.com
   Github Id: preym
   SSH Identity: ehc.prem
-chandana: 
+chandana:
   Full Name: Chandana Jakkamsetti
   Email: chandana@eggheadcreative.com
   Github Id: greesh
   SSH Identity: ehc.chandana
-vijay: 
+vijay:
   Full Name: Vijay Chitirala
   Email: vijay@eggheadcreative.com
   Github Id: vijay22sai
   SSH Identity: ehc.vijay
-mouli: 
+mouli:
   Full Name: Mouli Reddy
   Email: mouli@eggheadcreative.com
   Github Id: mouli-preddy
   SSH Identity: ehc.mouli
-abhinandan: 
+abhinandan:
   Full Name: Abhinandan Riyal
   Email: abhinandan@eggheadcreative.com
   Github Id: riyal7
@@ -44,3 +44,8 @@ prateek:
   Email: prateek@eggheadcreative.com
   Github Id: imsinu9
   SSH Identity: ehc.prateek
+surbhi:
+  Full Name: Surbhi Katyayani
+  Email: surbhi@eggheadcreative.com
+  Github Id: surbhikatyayani
+  SSH Identity: ehc.surbhi
