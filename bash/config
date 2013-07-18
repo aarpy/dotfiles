@@ -38,9 +38,9 @@ export LESS="-RX"
 export EDITOR="vi"
 export TERM=xterm-color
 
-export JAVA_HOME=/usr/lib/jvm/java-7-oracle
+#export JAVA_HOME=/usr/lib/jvm/java-7-oracle
 export ANDROID_HOME=~/opt/local/android-sdk
-export M2_HOME=~/opt/local/apache-maven-3.0.5
+#export M2_HOME=~/opt/local/apache-maven-3.0.5
 
 export NODE_ENV=development
 export RACK_ENV=development
