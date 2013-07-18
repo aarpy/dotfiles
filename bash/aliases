@@ -54,6 +54,7 @@ alias gsh="git sh"
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias gps='git push staging master'
 alias gpp='git push production master'
+alias gpd='git push demo master'
 
 # rails
 alias sc='script/console'
