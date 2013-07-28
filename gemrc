@@ -4,7 +4,6 @@ gem: --no-ri --no-rdoc
 :update_sources: true
 :sources:
 - http://gems.rubyforge.org
-- https://skztkVJoh43sPGxxoEHL@gem.fury.io/me/
 :backtrace: false
 :bulk_threshold: 1000
 :benchmark: false
