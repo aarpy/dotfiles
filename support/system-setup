@@ -38,6 +38,7 @@ pry
 rails
 foreman
 unicorn
+devkit
 EOF
 }
 
@@ -96,9 +97,6 @@ sudo apt-get remove --yes --force-yes openjdk-6-jre openjdk-7-jre openjdk-7-jdk 
 # Remove Maven2
 sudo apt-get purge --yes --force-yes maven2
 
-# Eclipse
-sudo apt-get remove eclipse eclipse-platform eclipse-jdt eclipse-cdt
-
 # Remove un-necessary packages
 sudo apt-get --yes --force-yes autoremove
 
@@ -141,16 +139,6 @@ sudo apt-get install --yes --force-yes nodejs npm
 # Vim
 mkdir -p ~/.vim/autoload ~/.vim/bundle
 curl -Sso ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
-
-# Insync
-cat /etc/apt/sources.list | grep "insynchq" &>null
-
-if [ $? -eq 1 ]; then
-  wget -qO - https://d2t3ff60b2tol4.cloudfront.net/services@insynchq.com.gpg.key | sudo apt-key add -
-  echo "deb http://apt.insynchq.com/ubuntu quantal non-free" | sudo tee -a /etc/apt/sources.list
-fi
-
-sudo apt-get install insync-beta-ubuntu
 
 # Make reference directory
 mkdir -p ~/Workspace/reference
