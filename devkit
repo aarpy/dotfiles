@@ -4,48 +4,46 @@ srini:
   Email: srini@eggheadcreative.com
   Github Id: saki
   SSH Identity: ehc.srini
-tripura:
-  Full Name: Tripura Konda
-  Email: tripura@eggheadcreative.com
-  Github Id: tripura
-  SSH Identity: ehc.tripura
-praaveen:
-  Full Name: Praaveen Ranganathan
-  Email: praaveen@eggheadcreative.com
-  Github Id: pvin
-  SSH Identity: ehc.praaveen
+  Expires In: 14400
 prem:
   Full Name: Prembabu Panchadara
   Email: prem@eggheadcreative.com
   Github Id: preym
   SSH Identity: ehc.prem
+  Expires In: 14400
 chandana:
   Full Name: Chandana Jakkamsetti
   Email: chandana@eggheadcreative.com
   Github Id: greesh
   SSH Identity: ehc.chandana
-vijay:
-  Full Name: Vijay Chitirala
-  Email: vijay@eggheadcreative.com
-  Github Id: vijay22sai
-  SSH Identity: ehc.vijay
+  Expires In: 14400
 mouli:
   Full Name: Mouli Reddy
   Email: mouli@eggheadcreative.com
   Github Id: mouli-preddy
   SSH Identity: ehc.mouli
-abhinandan:
-  Full Name: Abhinandan Riyal
-  Email: abhinandan@eggheadcreative.com
-  Github Id: riyal7
-  SSH Identity: ehc.abhinandan
+  Expires In: 14400
 prateek:
   Full Name: Prateek Mittal
   Email: prateek@eggheadcreative.com
   Github Id: imsinu9
   SSH Identity: ehc.prateek
+  Expires In: 14400
 surbhi:
   Full Name: Surbhi Katyayani
   Email: surbhi@eggheadcreative.com
   Github Id: surbhikatyayani
   SSH Identity: ehc.surbhi
+  Expires In: 14400
+kishore:
+  Full Name: Balakishore Raparthi
+  Email: kishore@eggheadcreative.com
+  Github Id: raparthi
+  SSH Identity: ehc.kishore
+  Expires In: 14400
+prasad:
+  Full Name: Prasad Konduru
+  Email: prasad@eggheadcreative.com
+  Github Id: prasadraju
+  SSH Identity: ehc.prasad
+  Expires In: 14400
