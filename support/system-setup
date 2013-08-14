@@ -10,14 +10,40 @@ fi
 ################################################################
 
 # Uncomment partner sources for apt
-line="quantal partner"
+line="precise partner"
 sudo sed -i "/${line}/ s/# *//" /etc/apt/sources.list
 
 # Do a basic update
 sudo apt-get update
 
 # Install Git & Git Extras
-sudo apt-get install --yes --force-yes git git-core git-extras tig
+sudo apt-get install --yes --force-yes git git-core tig
+
+################################################################
+# Heroku Toolbelt ##############################################
+################################################################
+
+
+echo "This script requires superuser access to install apt packages."
+echo "You will be prompted for your password by sudo."
+
+# clear any previous sudo permission
+sudo -k
+
+# run inside sudo
+sudo sh <<SCRIPT
+  # add heroku repository to apt
+  echo "deb http://toolbelt.heroku.com/ubuntu ./" > /etc/apt/sources.list.d/heroku.list
+
+  # install heroku's release key for package verification
+  wget -O- https://toolbelt.heroku.com/apt/release.key | apt-key add -
+
+  # update your sources
+  apt-get update
+
+  # install the toolbelt
+  apt-get install -y heroku-toolbelt
+SCRIPT
 
 
 ################################################################

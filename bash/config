@@ -45,5 +45,5 @@ export ANDROID_HOME=~/opt/local/android-sdk
 export NODE_ENV=development
 export RACK_ENV=development
 
-export PATH=$PATH:~/opt/local/android-sdk/tools:~/opt/local/android-sdk/platform-tools:~/opt/local/apache-maven-3.0.5/bin:~/Workspace/dotfiles/support
+export PATH=$PATH:~/opt/local/android-sdk/tools:~/opt/local/android-sdk/platform-tools:~/opt/local/apache-maven-3.0.5/bin:~/Workspace/dotfiles/support:/usr/local/heroku/bin
 cd ~/Workspace
