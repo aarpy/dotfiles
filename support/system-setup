@@ -87,7 +87,7 @@ fi
 
 # Picking an RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-rvm --default use 1.9.3@global
+rvm --default use 1.9.3
 
 ################################################################
 # Basic Essentials To Get Started ##############################
