@@ -10,7 +10,8 @@ fi
 ################################################################
 
 # Uncomment partner sources for apt
-line="precise partner"
+distro=`lsb_release --codename | cut -f2`  
+line="${distro} partner"
 sudo sed -i "/${line}/ s/# *//" /etc/apt/sources.list
 
 # Do a basic update
