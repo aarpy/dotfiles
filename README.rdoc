@@ -15,3 +15,5 @@ Dot files to keep different tools consistent across machines
 
 == Credits
   Ryan Bates for his dotfiles
+
+Durga's change
