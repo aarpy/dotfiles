@@ -189,7 +189,7 @@ if [ $? -eq 1 ]; then
   mv android-sdk-linux android-sdk
   rm android-sdk_r22-linux.tar
 else
-  android update sdk --no-ui --filter 1,10,23,38,39
+  android update sdk --no-ui --filter 1, 2, 3, 4, 6, 32, 43, 58, 59, 60, 62, 63
 fi
 
 # Install Maven Android SDK Deployer
