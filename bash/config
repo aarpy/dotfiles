@@ -38,8 +38,9 @@ export LESS="-RX"
 export EDITOR="vi"
 export TERM=xterm-color
 
-export JAVA_HOME=/usr/java/jre1.7.0_45
+export JAVA_HOME=/usr/java/jdk1.7.0_45
 export IDEA_JDK=/usr/java/jdk1.7.0_45
+export WEBIDE_JDK=/usr/java/jdk1.7.0_45
 #export ANDROID_HOME=~/opt/local/android-sdk
 #export M2_HOME=~/opt/local/apache-maven-3.0.5
 export GOPATH=$HOME/Workspace/go
@@ -48,6 +49,12 @@ export NODE_ENV=development
 export RACK_ENV=development
 export PLAY_ENV=development
 
+export CHROME_BIN=/usr/bin/chromium-browser
+export EC2_HOME=/opt/ec2home
+export AWS_AUTO_SCALING_HOME=/home/aarpy/Workspace/aws/AutoScaling-1.0.61.5
+
 #export PATH=$PATH:~/opt/local/android-sdk/tools:~/opt/local/android-sdk/platform-tools:~/opt/local/apache-maven-3.0.5/bin:~/Workspace/dotfiles/support:/usr/local/heroku/bin:~/opt/local/play-2.2.0
-export PATH=$PATH:/opt/AWS-ElasticBeanstalk-CLI-2.6.0/eb/linux/python2.7:~/Workspace/dotfiles/support:/usr/local/heroku/bin
+export PATH=$PATH:/opt/AWS-ElasticBeanstalk-CLI-2.6.0/eb/linux/python2.7:~/Workspace/dotfiles/support:/usr/local/heroku/bin:$EC2_HOME/bin:$AWS_AUTO_SCALING_HOME/bin
 #cd ~/Workspace
+
+. ~/.aws/keys.sh
