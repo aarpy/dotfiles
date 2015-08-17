@@ -1,11 +1,14 @@
+# custom
+alias ea="/usr/local/bin/wine ~/.wine/drive_c/Program\ Files/Sparx\ Systems/EA/EA.exe > /dev/null 2> /dev/null"
+
 # cd
 alias ..='cd ..'
 
 # ls
-alias ls="ls -F --color"
-alias la='ls -A --color'
-alias ll='ls -alF --color'
-alias l='ls -CF --color'
+alias ls="ls -F -G"
+alias la='ls -A -G'
+alias ll='ls -alF -G'
+alias l='ls -CF -G'
 
 # git
 alias gs="git summary"
@@ -34,6 +37,7 @@ alias gco="git checkout"
 alias gba="git branch -a"
 alias gcp="git cherry-pick"
 alias gpom="git pull origin master"
+alias gpuo="git push -u origin"
 alias gcd='cd "`git rev-parse --show-toplevel`"'
 alias gap='git add -p'
 alias gnap='git add -N . && git add -p'
@@ -55,6 +59,8 @@ alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias gps='git push staging master'
 alias gpp='git push production master'
 alias gpd='git push demo master'
+
+alias gti='git tag -d install && git push -u origin :refs/tags/install && git tag -a install -m "S3i current major release" && git push --tags'
 
 # rails
 alias sc='script/console'
