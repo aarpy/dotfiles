@@ -49,9 +49,9 @@ export PLAY_ENV=development
 export CHROME_BIN=/usr/bin/chromium-browser
 
 export GOROOT=/usr/local/go
-export PATH=$GOROOT/bin:/usr/local/bin:$PATH
-
 export GOPATH=~/Workspace/go
+
+export PATH=$GOROOT/bin:/usr/local/share/scala/bin:/usr/local/bin:$PATH
 
 export PIP_REQUIRE_VIRTUALENV=true
 
