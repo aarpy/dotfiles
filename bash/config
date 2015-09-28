@@ -38,9 +38,9 @@ export LESS="-RX"
 export EDITOR="vi"
 export TERM=xterm-color
 
-export JAVA_HOME=/usr/java/jdk1.7.0_45
-export IDEA_JDK=/usr/java/jdk1.7.0_45
-export WEBIDE_JDK=/usr/java/jdk1.7.0_45
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home
+export IDEA_JDK=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home
+export WEBIDE_JDK=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home
 
 export NODE_ENV=development
 export RACK_ENV=development
@@ -51,13 +51,20 @@ export CHROME_BIN=/usr/bin/chromium-browser
 export GOROOT=/usr/local/go
 export GOPATH=~/Workspace/go
 
-export PATH=$GOROOT/bin:/usr/local/share/scala/bin:/usr/local/bin:$PATH
+export PATH=$GOROOT/bin:/usr/local/share/scala/bin:/usr/local/bin:/usr/local/jmeter-2.13/bin:~/Workspace/go/bin:$PATH
 
 export PIP_REQUIRE_VIRTUALENV=true
 
 export HB_WORKSPACE=~/Workspace/hb
 export SELENIUM_SERVER_JAR=~/Workspace/hb/hb-cloud-tests/jar/selenium-server-standalone-2.42.2.jar
 export SELENIUM_BROWSER=chrome
+
+# Go helpers
+CDPATH=.:$GOPATH/src/github.com:~/Workspace
+#
+gocd () {
+    cd `go list -f '{{.Dir}}' $1`
+}
 
 #. ~/.aws/keys.sh
 

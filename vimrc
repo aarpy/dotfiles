@@ -1,6 +1,5 @@
 set rtp+=/usr/local/go/misc/vim
 syntax on
-filetype plugin indent on
 syntax enable
 set background=dark
 set number

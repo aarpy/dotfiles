@@ -1,4 +1,3 @@
-source ~/.bash/helpers/heroku
 source ~/.bash/helpers/git
 source ~/.bash/helpers/misc
 source ~/.bash/config
