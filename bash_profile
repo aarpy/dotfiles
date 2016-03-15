@@ -12,3 +12,6 @@ fi
 
 export NVM_DIR="/Users/ramu/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# added by Anaconda3 2.4.0 installer
+export PATH="/Users/ramu/anaconda/bin:$PATH"

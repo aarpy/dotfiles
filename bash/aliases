@@ -119,3 +119,5 @@ alias sarst='killall ssh-agent; eval `ssh-agent`'
 alias sshcp='ssh -i ~/.aws/rohi-careprice.pem ubuntu@ec2-54-84-0-8.compute-1.amazonaws.com'
 
 alias fuck='$(thefuck $(fc -ln -1))'
+alias vim='/usr/local/Cellar/vim/7.4.1257/bin/vim'
+alias vi='/usr/local/Cellar/vim/7.4.1257/bin/vim'

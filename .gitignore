@@ -2,3 +2,4 @@ ssh/ehc*
 ssh/known_hosts
 ssh/*.pub
 vim/autoload/*
+vim/
