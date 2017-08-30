@@ -5,4 +5,3 @@ if [ -f ~/.bash_profile ]; then
 fi
 
 . ~/.nvm/nvm.sh
-. ~/.bash/virtualenv-auto-activate.sh

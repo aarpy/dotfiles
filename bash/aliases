@@ -62,62 +62,13 @@ alias gpd='git push demo master'
 
 alias gti='git tag -d install && git push -u origin :refs/tags/install && git tag -a install -m "S3i current major release" && git push --tags'
 
-# rails
-alias sc='script/console'
-alias ss='script/server'
-alias sss='script/spec_server'
-alias sg='script/generate'
-alias a='autotest -rails'
-alias tlog='tail -f log/development.log'
-alias scaffold='script/generate nifty_scaffold'
-alias rst='touch tmp/restart.txt'
-
-#rails migrations
-alias migrate='rake db:migrate db:test:prepare'
-alias rdm="rake db:migrate"
-alias rdtp="rake db:test:prepare"
-#alias rdb ='rake db:reset spec:db:fixtures:load'
-
-#capistrano
-alias cdd='cap demo deploy'
-alias cpd='cap production deploy'
-alias csd='cap staging deploy'
-
-# commands starting with % for pasting from web
-alias %=' '
-
-# testing
-alias suitef="ruby spec/spec_suite.rb"
-alias suitefc="suitef --commit"
-alias suite="suitef"
-alias suitec="suite --commit"
-alias suitejc="suite --fast_js --commit"
-alias suites="suite --slow"
-alias suitesc="suites --commit"
-alias suitefails="echo 'Running suite, please wait...' && suitef | egrep '(_spec\.rb|Pending:)' | sed -e 's/.*spec\/\(.*\.rb\).*/\1/' | egrep -v '(fast_spec_suite|rails_spec_suite|suite)\.rb'"
-
-# misc
-alias less='$(which less) -XRN'
-alias reload='. ~/.bash_profile'
-alias make_gems_writable="sudo chmod -R a+w /Library/Ruby/Gems/1.8/gems"
-alias catchup='git pull && sudo geminstaller && migrate'
-alias mysql='mysql -uroot -ppassword'
-alias fs='foreman start'
-alias pkme='pagekite.py 5000 ehc.pagekite.me'
-alias tunnel='ssh -vND 8888 new_pip2p_prod'
-
-#Rails 3
-alias rc='rails console'
-alias rs='rails server'
-
 #ubuntu specific
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 
 #ssh-agent helpers
 alias sarst='killall ssh-agent; eval `ssh-agent`'
-alias sshcp='ssh -i ~/.aws/rohi-careprice.pem ubuntu@ec2-54-84-0-8.compute-1.amazonaws.com'
 
 alias fuck='$(thefuck $(fc -ln -1))'
-alias vim='/usr/local/Cellar/vim/7.4.1257/bin/vim'
-alias vi='/usr/local/Cellar/vim/7.4.1257/bin/vim'
+
+alias simulator="/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app/Contents/MacOS/Simulator"

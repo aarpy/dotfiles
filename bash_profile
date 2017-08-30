@@ -8,10 +8,18 @@ if [ -f ~/.localrc ]; then
   . ~/.localrc
 fi
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
 export NVM_DIR="/Users/ramu/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-# added by Anaconda3 2.4.0 installer
-export PATH="/Users/ramu/anaconda/bin:$PATH"
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f /Users/ramu/Downloads/google-cloud-sdk/path.bash.inc ]; then
+  source '/Users/ramu/Downloads/google-cloud-sdk/path.bash.inc'
+fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f /Users/ramu/Downloads/google-cloud-sdk/completion.bash.inc ]; then
+  source '/Users/ramu/Downloads/google-cloud-sdk/completion.bash.inc'
+fi
+
+export PATH="~/.rbenv/shims:/usr/local/sbin:$PATH"
+export PATH="$HOME/.fastlane/bin:$PATH"
